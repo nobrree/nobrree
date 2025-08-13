@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio</title>
+
+    <style>
+        header {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            height: 30px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            display: inline;
+            margin: 0 15px; 
+        }
+
+        body {
+            font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
+            color: #333;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            z-index: 1;
+        }
+
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width:  100vw;
+            height: 100vh;
+            background: url('../nobrree/imagens/santosinv.png') no-repeat;
+            background-size: "";
+            background-position: center;
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 20px;
+            margin: 0;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center; 
+            justify-content: center; 
+            text-align: center;
+        }
+
+        .santos {
+            width: 30px; 
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: rgba(51, 51, 51, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px; 
+            margin-top: 20px;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre mim</a></li>
+                <li><a href="#">Portifólio</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h1>Bem-vindo!!</h1>
+            <p>Sou um estudante de Ciências da Computação</p>
+            <p>Com conhecimento em DEVOPS, HTML, CSS, Frameworks, GIT, GITHUB e por aí vai!</p>
+            <img class="santos" src="/imagens/santos.jpg" alt="Imagem de perfil">
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 - Paulo Nobre</p>
+    </footer>
+
+</body>
+</html>
